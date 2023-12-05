@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <form>
+        <fieldset class="first">
+          <legend>Регистрация</legend>
+
+          <label>
+            Имя
+            <input type="text" name="name">
+          </label>
+          <br>
+      
+          <label>
+            Фамилия
+            <input type="text" name="surname">
+          </label>
+          <br>
+
+          <label>
+            Логин
+            <input type="text" name=" login">
+          </label>
+          <br>
+          <label for="start">Дата рождения:</label>
+          <input type="date" class="start" name="trip-start" value="2018-07-22"/>
+          <label for="pass">Пароль (минимум 8 символов):</label>
+          <input type="password" class="pass" name="password" minlength="8" required />
+
+          <br>
+          <div class="form-group">
+            <label class="select-group">
+              <span class="select-label">Выберите свой город</span>
+              <select class="select">
+                <option value="moscow" selected>Москва</option>
+                <option value="st-petersburg">Санкт-Петербург</option>
+                <option value="kazan">Казань</option>
+              </select>
+            </label>
+        </fieldset>
+      
+        <button>Зарегистрироваться</button>
+      </form>
+
+
+</body>
+</html>
